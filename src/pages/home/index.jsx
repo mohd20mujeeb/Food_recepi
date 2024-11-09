@@ -8,7 +8,7 @@ export default function Home() {
   if (loading) return <div>Loading...Please wait</div>;
 
   return (
-    <div className="py-8 container mt-20 w-screen h-screen mx-auto overflow-scroll flex flex-wrap justify-center gap-10 home">
+    <div className="py-8 container mt-48 sm:mt-20  w-screen h-screen mx-auto overflow-scroll flex flex-wrap justify-center gap-10 home">
       {recipeList && recipeList.length > 0 ? (
         recipeList.map((item) => <RecipeItem item={item} />)
       ) : (

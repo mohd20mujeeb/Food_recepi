@@ -18,7 +18,8 @@ code {
 
 .app{
   background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg');
-  background-size:contain;
+  background-size:cover;
+  background-repeat: no-repeat;
   backdrop-filter: brightness(75%);
 }
 

@@ -24,8 +24,8 @@ export default function Details() {
     getRecipeDetails();
   }, []);
   return (
-    <div className="bg-white/50 h-full backdrop-blur-lg pt-40 px-10 container grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div className="h-96 overflow-hidden rounded-xl group ">
+    <div className="bg-white/50 h-full backdrop-blur-lg pt-56 sm:pt-40 px-10 container grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-y-scroll">
+      <div className="h-80 sm:h-96 overflow-hidden rounded-xl group ">
         <img
           src={recipeDetailsData?.recipe?.image_url}
           className="w-full h-full object-cover block group-hover:scale-105 duration-300"
