@@ -24,7 +24,7 @@ export default function Details() {
     getRecipeDetails();
   }, []);
   return (
-    <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div className="bg-white/50 h-full backdrop-blur-lg pt-40 px-10 container grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div className="h-96 overflow-hidden rounded-xl group ">
         <img
           src={recipeDetailsData?.recipe?.image_url}
@@ -54,7 +54,7 @@ export default function Details() {
           <span className="text-2xl font-bold text black">
             Ingredients:
           </span>
-          <ul className="list-disc list-inside space-y-2 text-gray-700  ">
+          <ul className="list-disc  list-inside space-y-2 text-gray-700  ">
             {recipeDetailsData?.recipe?.ingredients.map((ingredient) => (
               <li >
                 <span className="text-2xl font-semibold text black">
@@ -71,5 +71,6 @@ export default function Details() {
       </div>
       <div className="row-start-2 lg:row-start-auto"></div>
     </div>
+    
   );
 }
